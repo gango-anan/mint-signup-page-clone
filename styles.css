@@ -3,8 +3,6 @@
 }
 body{
     background: #eceef1;
-    height: 2000px;
-    border: 5px solid black;
 }
 .main-header{
     display: flex;
@@ -27,9 +25,52 @@ a{
     border-radius: 5px;
     cursor: pointer;
 }
-/* .main-content{
-    display: relative;
-} */
+.main-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.title-form{
+    text-align: center;
+}
+.container-header-form{
+    justify-content:space-between;
+}
+
+.header-form{
+    display: flex;
+    list-style: none;
+}
+.form-container{
+    border: 1px solid gray;  
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35%;
+}
+.form-container p{
+    margin:0;
+    padding: 0;
+}
+.form-heading{
+    text-align: center;
+}
+.form{
+    width:80%;
+}
+.inputbox{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.create{
+    background-color: #0B79C8;
+    color: white;
+    border-radius: 5px;
+}
 .privacy-button{
     position: fixed;
     bottom: 0;
