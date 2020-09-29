@@ -1,0 +1,30 @@
+*{
+ box-sizing: border-box; 
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+}
+.links{
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: teal;
+}
+.signin{
+    width: 100px;
+    background-color: steelblue;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+.main  {  
+    background-color: blueviolet;
+}
