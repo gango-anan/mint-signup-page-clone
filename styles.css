@@ -1,11 +1,16 @@
 *{
  box-sizing: border-box; 
 }
-header{
+body{
+    background: #eceef1;
+    height: 2000px;
+    border: 5px solid black;
+}
+.main-header{
     display: flex;
     justify-content: flex-end;
 }
-.links{
+.nav-links{
     list-style: none;
     margin-top: 0;
     margin-bottom: 0;
@@ -13,18 +18,36 @@ header{
 }
 a{
     text-decoration: none;
-    color: teal;
+    color: #009fd9;
 }
 .signin{
     width: 100px;
-    background-color: steelblue;
+    background-color: #0077c5;
     color: white;
     border-radius: 5px;
     cursor: pointer;
 }
-
-
-
-.main  {  
-    background-color: blueviolet;
+/* .main-content{
+    display: relative;
+} */
+.privacy-button{
+    position: fixed;
+    bottom: 0;
+    right: 10%;
+}
+.privacy-button button{
+    background: #6B6C72;
+    color: white;
+    border-radius: 5px;
+    padding: 15px;
+}
+.legal_privacy_security{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+.legal_privacy_security a{
+    text-decoration: none;
+    color: grey;
 }
