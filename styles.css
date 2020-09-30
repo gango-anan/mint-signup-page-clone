@@ -90,6 +90,9 @@ ul.header-form{
     margin-top: 10px;
     margin-bottom: 15px;
     padding: 10px;
+    border-radius: 4px;
+    border-color: #ECEEF1;
+    border-style: groove;
 }
 .inputs p{
     font-size: 10px;
@@ -97,12 +100,26 @@ ul.header-form{
 .inputs [required]{
     margin-bottom: 5px;
 }
+
+.inputs img{
+    max-width: 20px;
+    max-height: 28px;
+}
+.pass-word{
+    position: relative;
+}
+.pswd-lock{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
 .create-button{
     background-color: #0B79C8;
     color: white;
     border-radius: 5px;
     width: 100%;
     padding: 15px;
+    cursor: pointer;
 }
 .terms-agreement{
     text-align: center;
@@ -122,6 +139,7 @@ ul.header-form{
 .main-footer{
     text-align: center;
     width: 100%;
+    margin-bottom: 50px;
 }
 .legal-container{
     display: flex;
@@ -135,8 +153,10 @@ ul.header-form{
     margin: 25px 0 2px 0;
 }
 .legal_privacy_security a{
-    text-decoration: none;
     font-size: 13px;
+}
+.legal_privacy_security a:hover{
+    text-decoration: underline;
 }
 .terms-conditions p{
     margin: 5px 0;
@@ -152,4 +172,5 @@ ul.header-form{
     color: white;
     border-radius: 5px;
     padding: 15px;
+    cursor: pointer;
 }

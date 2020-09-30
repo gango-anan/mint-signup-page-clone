@@ -15,11 +15,11 @@
                 <li><a href="#" class="blue-links decorate-links">I forgot my User ID or Password</a></li>
             </ul>
         </nav>
-        <button type="submit" class="signin" name="sign-in"><ion-icon name="lock-closed" class="lock-closed"></ion-icon>Sign In</button>
+        <button type="button" class="signin" name="sign-in"><ion-icon name="lock-closed" class="lock-closed"></ion-icon>Sign In</button>
     </header>
     <main class="main-content">
             <div class="title-form">
-                <img src="images/intuit.jpg" alt="">
+                <a href="#" class="decorate-links"><img src="images/intuit.jpg" alt=""></a>
             </div>
             <div class="container-header-form">
                 <ul  class="header-form">
@@ -40,12 +40,15 @@
                  <div class="form">
                     <form class="inputs">
                         <label for="Emailadress" class="form-fonts">Email address</label><br>
-                        <input type="text" class="inputbox" name="email"><br>
+                        <input type="email" class="inputbox" name="email"><br>
                         <label for="Phone" class="form-fonts">Phone (recommended)</label><br>
                         <input type="tel" class="inputbox" name="phone" required><br>
                         <p>Standard call, messaging or data rates may apply.</p><br>
                         <label for="Password" class="form-fonts">Password</label><br>
-                        <input type="text" class="inputbox" name="passw"><br>   
+                        <div class="pass-word">
+                            <input type="password" class="inputbox" name="passw">
+                            <span class="pswd-lock"><img src="images/lock-open.png" alt=""></span>
+                        </div> 
                         <button type="submit" class="create-button form-fonts" name="create-account"><ion-icon name="lock-closed" class="lock-closed"></ion-icon>Create Account</button>
                     </form>
                 </div>
@@ -60,9 +63,9 @@
     </main>
     <footer class="main-footer">
          <ul class="legal_privacy_security">
-            <li><a href="#" class="gray-links">Legal</a>&nbsp;  &nbsp;</li>
-            <li><a href="#" class="gray-links">Privacy</a>&nbsp;  &nbsp;</li>
-            <li><a href="#" class="gray-links">Security</a></li>
+            <li><a href="#" class="gray-links decorate-links">Legal</a>&nbsp;  &nbsp;</li>
+            <li><a href="#" class="gray-links decorate-links">Privacy</a>&nbsp;  &nbsp;</li>
+            <li><a href="#" class="gray-links decorate-links">Security</a></li>
         </ul>
         <div class="terms-conditions">
             <p>&copy; 2020 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB, TurboTax, ProConnect and Mint are registered trademarks of Intuit Inc.</p>
@@ -70,7 +73,7 @@
         </div>
         
     </footer>
-    <span class="privacy-button"><button>Privacy Setting</button></span>
+    <span class="privacy-button"><button type="button">Privacy Setting</button></span>
 
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 </body>
