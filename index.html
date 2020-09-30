@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mint Signup Page Clone</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="main-header">
         <nav class="main-nav">
             <ul class="nav-links">
                 <li>Already have an Intuit account?</li>
-                <li><a href="#" class="blue-links">I forgot my User ID or Password</a></li>
+                <li><a href="#" class="blue-links decorate-links">I forgot my User ID or Password</a></li>
             </ul>
         </nav>
-        <button type="submit" class="signin" name="sign-in">Sign In</button>
+        <button type="submit" class="signin" name="sign-in"><ion-icon name="lock-closed" class="lock-closed"></ion-icon>Sign In</button>
     </header>
     <main class="main-content">
             <div class="title-form">
@@ -22,50 +23,55 @@
             </div>
             <div class="container-header-form">
                 <ul  class="header-form">
-                    <li><a href="#" ><img src="images/img3.jpg" alt=""></a> </li>
-                    <li><a href="#" >mint</a></li>
-                    <li><a href="#"><img src="images/img2.jpg" alt=""></a></li>
-                    <li><a href="#">quickbooks</a></li>
-                    <li><a href="#"><img src="images/img1.jpg" alt=""></a></li>
-                    <li><a href="#">turbotax</a></li>
+                    <li><a href="#" class="decorate-links"><img src="images/img3.jpg" alt=""></a> </li>
+                    <li><a href="#" class="decorate-links gray-links">mint</a></li>
+                    <li><a href="#" class="decorate-links"><img src="images/img2.jpg" alt=""></a></li>
+                    <li><a href="#" class="decorate-links gray-links">quickbooks</a></li>
+                    <li><a href="#" class="decorate-links"><img src="images/img1.jpg" alt=""></a></li>
+                    <li><a href="#" class="decorate-links gray-links">turbotax</a></li>
                 </ul>
             </div>
             <div class="form-container">
                 <div class="form-heading">
                      <h2>Create an Intuit account</h2>
-                     <p>One account for everything Intuit, including Mint.</p>
-                     <p><a href="#" class="blue-links">Learn more</a></p>
+                     <p class="form-fonts">One account for everything Intuit, including Mint.</p>
+                     <p><a href="#" class="blue-links decorate-links">Learn more</a></p>
                  </div>
                  <div class="form">
                     <form class="inputs">
-                        <label for="Emailadress">Emailadress</label><br>
+                        <label for="Emailadress" class="form-fonts">Email address</label><br>
                         <input type="text" class="inputbox" name="email"><br>
-                        <label for="Phone">Phone (recommended)</label><br>
-                        <input type="text" class="inputbox" name="phone"><br>
-                        <label for="Password">Password</label><br>
+                        <label for="Phone" class="form-fonts">Phone (recommended)</label><br>
+                        <input type="tel" class="inputbox" name="phone" required><br>
+                        <p>Standard call, messaging or data rates may apply.</p><br>
+                        <label for="Password" class="form-fonts">Password</label><br>
                         <input type="text" class="inputbox" name="passw"><br>   
-                        <button type="submit" class="create" name="create-account">Create account</button>
+                        <button type="submit" class="create-button form-fonts" name="create-account"><ion-icon name="lock-closed" class="lock-closed"></ion-icon>Create Account</button>
                     </form>
                 </div>
                 <div class="terms-agreement">
                     <p>By clicking Create account, you agree to our</p>
-                    <p><a href="#" class="blue-links">Terms</a> and have read and acknowledge our <a href="#" class="blue-links">Privacy Statement.</a></p>
+                    <p><a href="#" class="blue-links decorate-links">Terms</a> and have read and acknowledge our <a href="#" class="blue-links decorate-links">Privacy Statement.</a></p>
                 </div>
                 <div class="captcha">
-                    <p>Invisible reCAPTCHA by Google <a href="#" class="blue-links">Privacy Policy</a> and <a href="#" class="blue-links">Terms</a> of Use.</p>
+                    <p>Invisible reCAPTCHA by Google <a href="#" class="blue-links decorate-links">Privacy Policy</a> and <a href="#" class="blue-links decorate-links">Terms</a> of Use.</p>
                 </div>
             </div>
     </main>
     <footer class="main-footer">
-        <ul class="legal_privacy_security">
-            <li><a href="#">Legal</a></li>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Security</a></li>
+         <ul class="legal_privacy_security">
+            <li><a href="#" class="gray-links">Legal</a>&nbsp;  &nbsp;</li>
+            <li><a href="#" class="gray-links">Privacy</a>&nbsp;  &nbsp;</li>
+            <li><a href="#" class="gray-links">Security</a></li>
         </ul>
-        <span>&copy; 2020 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB, TurboTax, ProConnect and Mint are registered trademarks of Intuit Inc.</span>
-        <br>
-        <span>Terms and conditions, features, support, pricing, and service options subject to change without notice.</span>
+        <div class="terms-conditions">
+            <p>&copy; 2020 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB, TurboTax, ProConnect and Mint are registered trademarks of Intuit Inc.</p>
+            <p>Terms and conditions, features, support, pricing, and service options subject to change without notice.</p>
+        </div>
+        
     </footer>
     <span class="privacy-button"><button>Privacy Setting</button></span>
+
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 </body>
 </html>
