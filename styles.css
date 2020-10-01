@@ -1,7 +1,8 @@
-*{
- box-sizing: border-box; 
+* {
+  box-sizing: border-box;
 }
-body{
+
+body {
     background: #eceef1;
     font-family: 'Roboto', sans-serif;
 }
@@ -168,7 +169,7 @@ ul.header-form{
     right: 5%;
 }
 .privacy-button button{
-    background: #6B6C72;
+    background: #6b6c72;
     color: white;
     border-radius: 5px;
     padding: 15px;
